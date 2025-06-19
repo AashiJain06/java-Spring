@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class = "in.aj.beans.Address" id = "addId">
+   <constructor-arg  value = "Indore"></constructor-arg>
+   <constructor-arg  value = "452003"></constructor-arg>
+   <constructor-arg  value = "64"></constructor-arg>
+   </bean>
+   <bean class="in.aj.beans.Student" id = "studId">
+   <constructor-arg value ="Aashi"></constructor-arg>
+   <constructor-arg value="101"></constructor-arg>
+   <constructor-arg ref="addId"></constructor-arg>
+   </bean>
+
+</beans>
