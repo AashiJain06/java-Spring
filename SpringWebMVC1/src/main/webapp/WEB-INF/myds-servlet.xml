@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        https://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        https://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<context:component-scan base-package="in.aj.controller"></context:component-scan>
+   <bean class = "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
+   <bean class="org.springframework.web.servlet.mvc.method.annotation.InternalResourceViewResolver">
+   <property name="prefix" value="/WEB-INF/views/hello"></property>
+   <property name="suffix" value=".jsp"></property>
+   </bean>
+</beans>
